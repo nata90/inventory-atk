@@ -39,6 +39,8 @@
                         'items' => [
                             ['label' => 'Supplier', 'icon' => 'institution', 'url' => ['supplier/index'],],
                             ['label' => 'Barang', 'icon' => 'database', 'url' => ['filebarang/index'],],
+                            ['label' => 'Termin', 'icon' => 'database', 'url' => ['termin/index'],],
+                            ['label' => 'Satker', 'icon' => 'database', 'url' => ['satker/index'],],
                             /*[
                                 'label' => 'Level One',
                                 'icon' => 'circle-o',
