@@ -9,12 +9,12 @@ use app\models\AtkSatker;
 /* @var $searchModel app\models\AtkHeaderDistribusiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Kelola Distribusi');
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('app', '');
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-solid box-success">
     <div class="box-header">
-        <h3 class="box-title">Barang</h3>
+        <h3 class="box-title">Kelola Mutasi</h3>
     </div>
     <div class="box-body">
 

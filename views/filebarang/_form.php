@@ -8,7 +8,15 @@ use yii\jui\DatePicker;
 /* @var $model app\models\FileBarangAtk */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-<?php $form = ActiveForm::begin(); ?>
+<?php $form = ActiveForm::begin([
+            'options'=>[
+                'layout' => 'horizontal',
+                'class'=>'form-horizontal',
+            ],
+            'fieldConfig' => [
+                'template' => '<label class="col-sm-3 control-label">{label}</label><div class="col-xs-8">{input}</div>',
+            ]
+        ]); ?>
     <div class="box-body">
 
         <div class="form-group">
@@ -62,8 +70,8 @@ use yii\jui\DatePicker;
             <?= $form->field($model, 'create_time')->textInput() ?>
         </div>*/ ?>
 
-        <div class="form-group">
-            <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <div class="box-footer">
+            <?= Html::submitButton('Save', ['class' => 'btn btn-success pull-right']) ?>
         </div>
 
     </div>

@@ -8,7 +8,7 @@ use app\components\Utility;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Supplier';
+$this->title = '';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-solid box-success">

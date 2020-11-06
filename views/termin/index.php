@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\TabelTerminSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Termin');
+$this->title = '';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-solid box-success">

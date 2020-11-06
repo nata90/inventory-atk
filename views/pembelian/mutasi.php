@@ -8,7 +8,7 @@ use yii\web\JsExpression;
 use yii\helpers\Url;
 use app\components\Utility;
 
-$this->title = 'Mutasi';
+$this->title = '';
 $this->registerJs(<<<JS
 	$(document).on("click", "#submit-mutasi", function () {
 		var url = $(this).attr('url');
@@ -69,12 +69,12 @@ JS
 			'options'=>['id'=>'form-mutasi'],
 			'enableClientValidation'=>false
 		]); ?>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header with-border">
-					<h3 class="box-title">Pembelian</h3>
+					<h3 class="box-title">Mutasi</h3>
 				</div>
 				<div class="box-body">
-			        <div class="row">
+			        <div class="row" style="padding-bottom: 10px;">
 			        	<div class="col-lg-2">
 							<div class="input-group">
 								<?= $form->field($model, 'no_distribusi')->textInput(['maxlength' => true, 'readonly' => 'true']) ?>
@@ -125,9 +125,9 @@ JS
 			        
 				</div>
 			</div>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header with-border">
-					<h3 class="box-title">Detail</h3>
+					<h3 class="box-title"> Detail Mutasi</h3>
 				</div>
 				
 					<div class="box-body">
@@ -175,7 +175,7 @@ JS
 					</div>
 				
 			</div>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header">
 					<h3 class="box-title"></h3>
 				</div>	

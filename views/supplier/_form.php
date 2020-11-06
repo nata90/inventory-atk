@@ -7,7 +7,15 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\AtkFileSupplier */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-<?php $form = ActiveForm::begin(); ?>
+<?php $form = ActiveForm::begin([
+            'options'=>[
+                'layout' => 'horizontal',
+                'class'=>'form-horizontal',
+            ],
+            'fieldConfig' => [
+                'template' => '<label class="col-sm-3 control-label">{label}</label><div class="col-xs-8">{input}</div>',
+            ]
+        ]); ?>
     <div class="box-body">
 
         <div class="form-group">
@@ -52,9 +60,6 @@ use yii\widgets\ActiveForm;
 
     </div>
     <div class="box-footer">
-        <div class="form-group">
-            <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
-        </div>
-
+        <?= Html::submitButton('Save', ['class' => 'btn btn-success pull-right']) ?>
     </div>
 <?php ActiveForm::end(); ?>

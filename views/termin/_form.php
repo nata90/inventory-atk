@@ -20,8 +20,8 @@ use yii\widgets\ActiveForm;
     	<?= $form->field($model, 'Termin')->textInput(['maxlength' => true]) ?>
     </div>
 
-    <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
+    <div class="box-footer">
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success pull-right']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

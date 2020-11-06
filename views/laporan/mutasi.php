@@ -8,7 +8,7 @@ use app\components\Utility;
 /* @var $searchModel app\models\AtkDetailDistribusiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Laporan Mutasi');
+$this->title = Yii::t('app', '');
 $this->params['breadcrumbs'][] = $this->title;
 $this->registerJs(<<<JS
     $(document).on("click", "#xls-mutasi", function () {

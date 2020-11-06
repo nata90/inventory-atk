@@ -8,7 +8,7 @@ use yii\web\JsExpression;
 use yii\helpers\Url;
 use app\components\Utility;
 
-$this->title = 'Pembelian';
+$this->title = '';
 $this->registerJs(<<<JS
 	$(document).on("keyup", "#atkdetailpembelian-jumlah", function () {
 		var jum = $(this).val();
@@ -89,25 +89,17 @@ JS
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-12">
 		<?php $form = ActiveForm::begin([
 			'options'=>['id'=>'form-pembelian'],
 			'enableClientValidation'=>false
 		]); ?>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header with-border">
 					<h3 class="box-title">Pembelian</h3>
 				</div>
 					<div class="box-body">
-						<?php /*<div class="row">
-							<div class="col-lg-2">
-								<div class="input-group">
-									<?= $form->field($model, 'no_pembelian')->textInput(['maxlength' => true]) ?>
-								</div>
-							</div>
-							
-				        </div>*/ ?>
-				        <div class="row">
+				        <div class="row" style="padding-bottom: 10px;">
 				        	<div class="col-lg-2">
 								<div class="input-group">
 									<?= $form->field($model, 'no_pembelian')->textInput(['maxlength' => true, 'readonly' => 'true']) ?>
@@ -121,7 +113,7 @@ JS
 						            ) ?>
 								</div>
 							</div>
-							<div class="col-lg-2" style="display:none;">
+							<div class="col-lg-4" style="display:none;">
 								<div class="input-group">
 									<?= $form->field($model, 'kode_lokasi')->dropDownList(
 						                $listData,
@@ -134,11 +126,9 @@ JS
 								<div class="input-group">
 									<?= $form->field($model, 'no_referensi')->textInput(['maxlength' => true]) ?>
 								</div>
-							</div>
-								
-				 
+							</div>	
 				        </div>
-				        <div class="row">
+				        <div class="row" style="padding-bottom: 10px;">
 				        	<div class="col-lg-3">
 								<div class="input-group">
 									<?= $form->field($model, 'kode_supplier')->dropDownList(
@@ -178,13 +168,13 @@ JS
 				        </div>
 					</div>
 			</div>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header with-border">
 					<h3 class="box-title">Detail</h3>
 				</div>
 				
 					<div class="box-body">
-						<div class="row">
+						<div class="row" style="padding-bottom: 10px;">
 							<div class="col-lg-4">
 								<div class="input-group">
 									<?= $form->field($modelDetail, 'nama_barang')->widget(\yii\jui\AutoComplete::class, [
@@ -222,7 +212,7 @@ JS
 								</div>
 							</div>
 				        </div>
-				       <div class="row">
+				       <div class="row" style="padding-bottom: 10px;">
 							
 							
 							<div class="col-lg-2">
@@ -244,7 +234,7 @@ JS
 					</div>
 				
 			</div>
-			<div class="box box-success">
+			<div class="box box-success box-solid">
 				<div class="box-header">
 					<h3 class="box-title"></h3>
 				</div>	

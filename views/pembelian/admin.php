@@ -10,7 +10,7 @@ use app\models\TabelTermin;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Kelola Pembelian';
+$this->title = '';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-solid box-success">

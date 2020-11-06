@@ -9,7 +9,7 @@ use app\components\Utility;
 /* @var $searchModel app\models\AtkDetailDistribusiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Laporan Pembelian');
+$this->title = Yii::t('app', '');
 $this->params['breadcrumbs'][] = $this->title;
 $this->registerJs(<<<JS
     $(document).on("click", "#xls-pembelian", function () {
